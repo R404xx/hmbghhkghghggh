@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SamarGPT</title>
+  <link rel="shortcut icon" href="/chatGPT.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extra.css">
+</head>
+
+<body>
+  <main id="first-main" class="first">
+    <div class="text-container">
+      <img src="/chatGPT.png" alt="SamarGPT Logo" id="logo">
+      <h1><span class="text"></span></h1>
+    </div>
+    <div class="button-container">
+      <button id="redirectButton">Get Started</button>
+    </div>
+  </main>
+  <main id="second-main" class="second w-full min-h-[calc(100vh-1rem)] max-h-[calc(100vh-1rem)] flex flex-col"
+    style="display: none;">
+    <!-- Chat Area -->
+    <div class="chat-container top-0" id="chat-container"></div>
+    <!-- Prompt -->
+    <form method="post" class="form-container h-fit w-full fixed-bottom" id="chat-form">
+      <textarea name="prompt" id="prompt" cols="30" rows="1"
+        class="p-2 resize-none focus:outline-none text-white" placeholder="Message SamarGPT"></textarea>
+      <button type="submit">
+        <img class="m-auto" src="/sendArrow.png" alt="Send">
+      </button>
+    </form>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
